@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [Suite123]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="Test143(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="TestNGPack.TestNGClass3">
+        <methods>
+          <include name="openProductPage"/>
+          <include name="captureScreenshot"/>
+          <include name="lounchURL"/>
+          <include name="lounchBrowser"/>
+          <include name="lounchBrowser"/>
+          <include name="closedBrowser"/>
+          <include name="checkAddToCartBag"/>
+          <include name="cleanPomObject"/>
+        </methods>
+      </class> <!-- TestNGPack.TestNGClass3 -->
+    </classes>
+  </test> <!-- Test143(failed) -->
+</suite> <!-- Failed suite [Suite123] -->

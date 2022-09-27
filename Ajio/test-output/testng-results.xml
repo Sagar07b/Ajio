@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-20T14:39:08 IST" name="Suite123" finished-at="2022-09-20T14:41:49 IST" duration-ms="161382">
+    <groups>
+    </groups>
+    <test started-at="2022-09-20T14:39:08 IST" name="Test143" finished-at="2022-09-20T14:41:49 IST" duration-ms="161382">
+      <class name="TestNGPack.TestNGClass3">
+        <test-method is-config="true" signature="lounchBrowser(java.lang.String)[pri:0, instance:TestNGPack.TestNGClass3@2a798d51]" started-at="2022-09-20T14:39:13 IST" name="lounchBrowser" finished-at="2022-09-20T14:39:15 IST" duration-ms="2326" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lounchBrowser -->
+        <test-method is-config="true" signature="lounchBrowser()[pri:0, instance:TestNGPack.TestNGClass3@2a798d51]" started-at="2022-09-20T14:39:15 IST" name="lounchBrowser" finished-at="2022-09-20T14:39:15 IST" duration-ms="68" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lounchBrowser -->
+        <test-method is-config="true" signature="lounchURL()[pri:0, instance:TestNGPack.TestNGClass3@2a798d51]" started-at="2022-09-20T14:39:15 IST" name="lounchURL" finished-at="2022-09-20T14:39:44 IST" duration-ms="28632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lounchURL -->
+        <test-method signature="openProductPage()[pri:1, instance:TestNGPack.TestNGClass3@2a798d51]" started-at="2022-09-20T14:39:44 IST" name="openProductPage" finished-at="2022-09-20T14:40:21 IST" duration-ms="36985" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openProductPage -->
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:TestNGPack.TestNGClass3@2a798d51]" started-at="2022-09-20T14:40:21 IST" name="captureScreenshot" finished-at="2022-09-20T14:40:21 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=openProductPage status=SUCCESS method=TestNGClass3.openProductPage()[pri:1, instance:TestNGPack.TestNGClass3@2a798d51] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshot -->
+        <test-method is-config="true" signature="lounchURL()[pri:0, instance:TestNGPack.TestNGClass3@2a798d51]" started-at="2022-09-20T14:40:21 IST" name="lounchURL" finished-at="2022-09-20T14:40:31 IST" duration-ms="10113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lounchURL -->
+        <test-method signature="checkAddToCartBag()[pri:2, instance:TestNGPack.TestNGClass3@2a798d51]" started-at="2022-09-20T14:40:31 IST" name="checkAddToCartBag" finished-at="2022-09-20T14:40:49 IST" depends-on-methods="TestNGPack.TestNGClass3.openProductPage" duration-ms="17798" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='circle size-variant-item size-instock ']) [4]  "}
+  (Session info: chrome=105.0.5195.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-3ATMJAD', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50669}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 353fa3c0769f6d810308e6248a80ae62
+*** Element info: {Using=xpath, value=(//div[@class='circle size-variant-item size-instock ']) [4]  }]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='circle size-variant-item size-instock ']) [4]  "}
+  (Session info: chrome=105.0.5195.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-3ATMJAD', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50669}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 353fa3c0769f6d810308e6248a80ae62
+*** Element info: {Using=xpath, value=(//div[@class='circle size-variant-item size-instock ']) [4]  }
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at aJio.CheckAddToBagProduct.selectProductSize(CheckAddToBagProduct.java:37)
+at TestNGPack.TestNGClass3.checkAddToCartBag(TestNGClass3.java:122)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddToCartBag -->
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:TestNGPack.TestNGClass3@2a798d51]" started-at="2022-09-20T14:40:49 IST" name="captureScreenshot" finished-at="2022-09-20T14:40:50 IST" duration-ms="739" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkAddToCartBag status=FAILURE method=TestNGClass3.checkAddToCartBag()[pri:2, instance:TestNGPack.TestNGClass3@2a798d51] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshot -->
+        <test-method is-config="true" signature="cleanPomObject()[pri:0, instance:TestNGPack.TestNGClass3@2a798d51]" started-at="2022-09-20T14:40:50 IST" name="cleanPomObject" finished-at="2022-09-20T14:40:50 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanPomObject -->
+        <test-method is-config="true" signature="closedBrowser()[pri:0, instance:TestNGPack.TestNGClass3@2a798d51]" started-at="2022-09-20T14:41:46 IST" name="closedBrowser" finished-at="2022-09-20T14:41:49 IST" duration-ms="3045" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedBrowser -->
+      </class> <!-- TestNGPack.TestNGClass3 -->
+      <class name="TestNGPack.TestNGClass1">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:TestNGPack.TestNGClass1@4cc451f2]" started-at="2022-09-20T14:39:08 IST" name="launchBrowser" finished-at="2022-09-20T14:39:10 IST" duration-ms="2055" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="createPOMObject()[pri:0, instance:TestNGPack.TestNGClass1@4cc451f2]" started-at="2022-09-20T14:39:15 IST" name="createPOMObject" finished-at="2022-09-20T14:39:15 IST" duration-ms="77" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPOMObject -->
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:TestNGPack.TestNGClass1@4cc451f2]" started-at="2022-09-20T14:39:15 IST" name="launchUrl" finished-at="2022-09-20T14:39:42 IST" duration-ms="26134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="selectWatch()[pri:0, instance:TestNGPack.TestNGClass1@4cc451f2]" started-at="2022-09-20T14:39:42 IST" name="selectWatch" finished-at="2022-09-20T14:40:10 IST" duration-ms="28736" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectWatch -->
+        <test-method is-config="true" signature="addToCartProduct(org.testng.ITestResult)[pri:0, instance:TestNGPack.TestNGClass1@4cc451f2]" started-at="2022-09-20T14:40:10 IST" name="addToCartProduct" finished-at="2022-09-20T14:40:37 IST" duration-ms="26618" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=selectWatch status=SUCCESS method=TestNGClass1.selectWatch()[pri:0, instance:TestNGPack.TestNGClass1@4cc451f2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartProduct -->
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:TestNGPack.TestNGClass1@4cc451f2]" started-at="2022-09-20T14:40:37 IST" name="launchUrl" finished-at="2022-09-20T14:40:51 IST" duration-ms="14401" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="sportShoosePage()[pri:0, instance:TestNGPack.TestNGClass1@4cc451f2]" started-at="2022-09-20T14:40:51 IST" name="sportShoosePage" finished-at="2022-09-20T14:41:32 IST" duration-ms="40882" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sportShoosePage -->
+        <test-method is-config="true" signature="addToCartProduct(org.testng.ITestResult)[pri:0, instance:TestNGPack.TestNGClass1@4cc451f2]" started-at="2022-09-20T14:41:32 IST" name="addToCartProduct" finished-at="2022-09-20T14:41:44 IST" duration-ms="12077" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=sportShoosePage status=SUCCESS method=TestNGClass1.sportShoosePage()[pri:0, instance:TestNGPack.TestNGClass1@4cc451f2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartProduct -->
+        <test-method is-config="true" signature="cleanPomObject()[pri:0, instance:TestNGPack.TestNGClass1@4cc451f2]" started-at="2022-09-20T14:41:44 IST" name="cleanPomObject" finished-at="2022-09-20T14:41:44 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanPomObject -->
+        <test-method is-config="true" signature="closedBrowser()[pri:0, instance:TestNGPack.TestNGClass1@4cc451f2]" started-at="2022-09-20T14:41:44 IST" name="closedBrowser" finished-at="2022-09-20T14:41:45 IST" duration-ms="1196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedBrowser -->
+      </class> <!-- TestNGPack.TestNGClass1 -->
+      <class name="TestNGPack.TestNGClass2">
+        <test-method is-config="true" signature="lounchBrowser(java.lang.String)[pri:0, instance:TestNGPack.TestNGClass2@5b239d7d]" started-at="2022-09-20T14:39:10 IST" name="lounchBrowser" finished-at="2022-09-20T14:39:13 IST" duration-ms="2952" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lounchBrowser -->
+        <test-method is-config="true" signature="lounchBrowser()[pri:0, instance:TestNGPack.TestNGClass2@5b239d7d]" started-at="2022-09-20T14:39:15 IST" name="lounchBrowser" finished-at="2022-09-20T14:39:15 IST" duration-ms="66" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lounchBrowser -->
+        <test-method is-config="true" signature="louncURL()[pri:0, instance:TestNGPack.TestNGClass2@5b239d7d]" started-at="2022-09-20T14:39:15 IST" name="louncURL" finished-at="2022-09-20T14:39:41 IST" duration-ms="25969" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- louncURL -->
+        <test-method signature="openAjioFacebookPage()[pri:1, instance:TestNGPack.TestNGClass2@5b239d7d]" started-at="2022-09-20T14:39:41 IST" name="openAjioFacebookPage" finished-at="2022-09-20T14:39:52 IST" duration-ms="10973" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openAjioFacebookPage -->
+        <test-method is-config="true" signature="captureScreenShot(org.testng.ITestResult)[pri:0, instance:TestNGPack.TestNGClass2@5b239d7d]" started-at="2022-09-20T14:39:52 IST" name="captureScreenShot" finished-at="2022-09-20T14:39:52 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=openAjioFacebookPage status=SUCCESS method=TestNGClass2.openAjioFacebookPage()[pri:1, instance:TestNGPack.TestNGClass2@5b239d7d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenShot -->
+        <test-method is-config="true" signature="louncURL()[pri:0, instance:TestNGPack.TestNGClass2@5b239d7d]" started-at="2022-09-20T14:39:52 IST" name="louncURL" finished-at="2022-09-20T14:40:10 IST" duration-ms="17971" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- louncURL -->
+        <test-method signature="openAjioInstagramPage()[pri:2, instance:TestNGPack.TestNGClass2@5b239d7d]" started-at="2022-09-20T14:40:10 IST" name="openAjioInstagramPage" finished-at="2022-09-20T14:40:17 IST" duration-ms="7123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openAjioInstagramPage -->
+        <test-method is-config="true" signature="captureScreenShot(org.testng.ITestResult)[pri:0, instance:TestNGPack.TestNGClass2@5b239d7d]" started-at="2022-09-20T14:40:17 IST" name="captureScreenShot" finished-at="2022-09-20T14:40:17 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=openAjioInstagramPage status=SUCCESS method=TestNGClass2.openAjioInstagramPage()[pri:2, instance:TestNGPack.TestNGClass2@5b239d7d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenShot -->
+        <test-method is-config="true" signature="cleanPomObject()[pri:0, instance:TestNGPack.TestNGClass2@5b239d7d]" started-at="2022-09-20T14:40:17 IST" name="cleanPomObject" finished-at="2022-09-20T14:40:17 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanPomObject -->
+        <test-method is-config="true" signature="closedBrowser()[pri:0, instance:TestNGPack.TestNGClass2@5b239d7d]" started-at="2022-09-20T14:41:45 IST" name="closedBrowser" finished-at="2022-09-20T14:41:46 IST" duration-ms="839" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedBrowser -->
+      </class> <!-- TestNGPack.TestNGClass2 -->
+    </test> <!-- Test143 -->
+  </suite> <!-- Suite123 -->
+</testng-results>
