@@ -4,18 +4,17 @@
   <test thread-count="5" parallel="classes" name="Test143(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="TestNGPack.TestNGClass3">
+      <class name="TestNGPack.TestNGClass2">
         <methods>
-          <include name="openProductPage"/>
-          <include name="captureScreenshot"/>
-          <include name="lounchURL"/>
-          <include name="lounchBrowser"/>
-          <include name="lounchBrowser"/>
           <include name="closedBrowser"/>
-          <include name="checkAddToCartBag"/>
+          <include name="louncURL"/>
           <include name="cleanPomObject"/>
+          <include name="captureScreenShot"/>
+          <include name="lounchBrowser"/>
+          <include name="lounchBrowser"/>
+          <include name="openAjioFacebookPage"/>
         </methods>
-      </class> <!-- TestNGPack.TestNGClass3 -->
+      </class> <!-- TestNGPack.TestNGClass2 -->
     </classes>
   </test> <!-- Test143(failed) -->
 </suite> <!-- Failed suite [Suite123] -->
